@@ -64,7 +64,7 @@ $titulo = 'Mensaje de un visitante en VeryTutos Server';
 $msjCorreo = "Nombre: $nombre\n E-Mail: $email\n Mensaje:\n $mensaje";
  
 // Si se llenaron los campos correctamente se envia el mensaje, sino emite un error
-mail($para, $titulo, $msjCorreo);
+@mail($para, $titulo, $msjCorreo);
 echo 'El mensaje se ha enviado correctamente';
 ?>
                             
